@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mehrbod.a250movies.FinderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rankButtonFinderActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeFragment"
+            android:text="Rank" />
+
+        <Button
+            android:id="@+id/directorButtonFinderActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeFragment"
+            android:text="Director" />
+
+        <Button
+            android:id="@+id/actorButtonFinderAcitivty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeFragment"
+            android:text="Actor" />
+
+        <Button
+            android:id="@+id/movieButtonFinderActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeFragment"
+            android:text="Movie" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/rankDirectorActorMovieFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.mehrbod.a250movies.BlankFragment"
+        tools:layout="@layout/fragment_rank" />
+
+</LinearLayout>

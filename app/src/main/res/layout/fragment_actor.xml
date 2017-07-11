@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mehrbod.a250movies.ActorFragment"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/chrisoph_waltz"
+        android:adjustViewBounds="true"/>
+
+    <EditText
+        android:id="@+id/actorEditTextActorFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="40dp"
+        android:hint="Actor's Name" />
+
+    <Button
+        android:id="@+id/findButtonActorFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onActorFragmentFindButtonClickListener"
+        android:layout_below="@+id/actorEditTextActorFragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Find" />
+</RelativeLayout>

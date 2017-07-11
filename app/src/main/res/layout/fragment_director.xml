@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mehrbod.a250movies.DirectorFragment"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/imageViewDirectorFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/stanley_kubrick" />
+
+    <EditText
+        android:id="@+id/directorEditTextDirectorActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewDirectorFragment"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:hint="Director's Name" />
+
+    <Button
+        android:id="@+id/findButtonDirectorFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onDirectorFragmentFindButtonClickListener"
+        android:text="Find"
+        android:layout_below="@+id/directorEditTextDirectorActivity"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
